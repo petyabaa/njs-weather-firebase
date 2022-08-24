@@ -23,6 +23,12 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
+
+  setUserProperties(analytics, { 
+    restaurant: 'Oktogon', // Restaurant name
+    kiosk_number: 'Kiosk3', // Kiosk number in restaurant
+    workstation_id: 'ABC' // Workstation ID
+  });
   
   window.logEvent = logEvent;
   window.setUserProperties = setUserProperties;
