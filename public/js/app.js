@@ -33,7 +33,7 @@ weatherForm.addEventListener('submit', (e) => {
                 messageTwo.textContent = ''
                 messageThree.textContent = ''
             } else {
-                logEvent(analytics, 'Search', { search_term: location});
+                logEvent(analytics, 'Search', {search_term: location});
                /*  console.log(data.location)
                 console.log(data.degree)
                 console.log(data.feels)  */  
